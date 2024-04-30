@@ -35,6 +35,8 @@
 
 package javabasic;
 
+import java.util.Scanner;
+
 public class ArrayLotto {
 
 	public static void main(String[] args) {
@@ -43,9 +45,30 @@ public class ArrayLotto {
 		// (int)(Math.random()*45)+1 : 1~45 중 랜덤한 정수
 		
 		// 중복제거 안 된 7개의 1~45 범위의 랜덤 정수
-		for (int i=0; i<7; i++) {
-			System.out.println((int)(Math.random()*45)+1);
-		}
+//		for (int i=0; i<7; i++) {
+//			System.out.println((int)(Math.random()*45)+1);
+//		}
+		
+		Scanner scanner = new Scanner(System.in);
+		int a = scanner.nextInt();
+		Scanner scanner2 = new Scanner(System.in);
+		int b = scanner.nextInt();
+		Scanner scanner3 = new Scanner(System.in);
+		int c = scanner.nextInt();
+		Scanner scanner4 = new Scanner(System.in);
+		int d = scanner.nextInt();
+		Scanner scanner5 = new Scanner(System.in);
+		int e = scanner.nextInt();
+		Scanner scanner6 = new Scanner(System.in);
+		int f = scanner.nextInt();
+		Scanner scanner7 = new Scanner(System.in);
+		int g = scanner.nextInt();
+			for (int i=0; i<7; i++) {
+				System.out.println((int)(Math.random()*45)+1);
+			}
+		
+		System.out.println();
+		
 		
 	} // main
 
