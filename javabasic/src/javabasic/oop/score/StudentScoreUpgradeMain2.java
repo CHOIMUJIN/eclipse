@@ -53,5 +53,6 @@ public class StudentScoreUpgradeMain2 {
 		sumList.add(2, mathSum);
 		return sumList;
 	}
+	
 
 } // class
