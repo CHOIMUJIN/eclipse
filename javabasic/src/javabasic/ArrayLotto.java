@@ -1,3 +1,4 @@
+
 /*
  * 개인과제
  * 과제명 : 배열로또
@@ -49,32 +50,29 @@ public class ArrayLotto {
 //			System.out.println((int)(Math.random()*45)+1);
 //		}
 		
-		System.out.println("1~45까지 서로 다른 7개의 숫자를 입력해주세요.");
+		int[] num1 = new int[7]; // 사용자가 입력한 값
+		int[] num2 = new int[7]; // 랜덤하게 생성된 값
 		
-		Scanner scanner = new Scanner(System.in);
-		int a = scanner.nextInt();
-		int b = scanner.nextInt();
-		int c = scanner.nextInt();
-		int d = scanner.nextInt();
-		int e = scanner.nextInt();
-		int f = scanner.nextInt();
-		int g = scanner.nextInt();	
-		if (a==b || a==c || a==d || a==e || a==f || a==g || b==c || b==d || b==e || b==f || 
-				b==g || c==d || c==e || c==f || c==g || d==e || d==f || d==g || e==f || e==g || f==g)
-			System.out.println("중복 숫자가 있습니다. 다시 입력해 주세요 !");
-
-		
-		System.out.println("로또 번호입니다!");
+		System.out.println("1~45까지 서로 다른 7개의 숫자를 입력하세요!");
 		
 		for (int i=0; i<7; i++) {
-			System.out.println((int)(Math.random()*45)+1);
-		}
-
+			Scanner scanner = new Scanner(System.in);
+			int num3 = scanner.nextInt();
 			
-//		
-//		System.out.println();
+//			if () {
+//				System.out.println("중복 숫자가 있습니다. 다시 입력해 주세요!");
+//			} else {
+//					System.out.println("진행하겠습니다!");
+//			}
 //
-//		switch (ni4) {
+		}
+		
+//		for (int i=0; i<7; i++) {
+//			System.out.println((int)(Math.random()*45)+1);
+//		}
+		
+				
+//		switch () {
 //		case 2 :
 //			System.out.println("꽝~! 다음 기회에"); 
 //				break;
