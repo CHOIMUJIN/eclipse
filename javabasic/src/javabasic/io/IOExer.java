@@ -62,6 +62,13 @@ public class IOExer {
 			fnfe.printStackTrace();
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
+		} finally {
+			try {
+				ois.close();
+				oos.close();
+			} catch (IOException ioe) {
+				ioe.printStackTrace();
+			}
 		}
 		
 	} // main
