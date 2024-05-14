@@ -24,9 +24,6 @@ public class ChattingServer {
 				if (svSocket!=null) {
 					System.out.println("서버 측 Socket 생성됨! : " + svSocket);
 				}
-				InputStream is = svSocket.getInputStream();
-				BufferedReader br = new BufferedReader(new InputStreamReader(is));
-				System.out.println(br.readLine());
 			}
 		} catch (IOException ioe) {
 			ioe.printStackTrace();

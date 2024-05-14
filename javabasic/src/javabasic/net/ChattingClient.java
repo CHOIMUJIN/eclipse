@@ -18,10 +18,6 @@ public class ChattingClient {
 			// s = new Socket("127.0.0.1", 9999); // 방법 3
 			if (s!=null) {
 				System.out.println("재팅서버에 연결되었습니다!" + s);
-				OutputStream os = s.getOutputStream();
-				OutputStreamWriter osw = new OutputStreamWriter(os);
-				osw.write("Hello~ I'm realchoky~~~");
-				osw.flush();
 			}
 		} catch (UnknownHostException ukhe) {
 			ukhe.printStackTrace();
