@@ -94,7 +94,7 @@ public class BoardMain {
 	}
 	
 	// 게시물 등록
-	private int insertBoard(Board board) throws SQLException {
+	int insertBoard(Board board) throws SQLException {
 		String sql = " insert into board values(bid_seq.nextval, ?, ?, sysdate) ";
 		ps = conn.prepareStatement(sql);
 		ps.setString(1, board.getBtitle());
@@ -103,7 +103,7 @@ public class BoardMain {
 	}
 	
 	// 게시물 수정
-	private int updateBoard(Board board) throws SQLException {
+	int updateBoard(Board board) throws SQLException {
 		String sql = " update board set btitle=?, bcontent=? where bid=? ";
 		ps = conn.prepareStatement(sql);
 		ps.setString(1, board.getBtitle());
