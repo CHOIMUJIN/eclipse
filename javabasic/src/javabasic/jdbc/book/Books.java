@@ -6,15 +6,15 @@ public class Books {
 	private String btitle;
 	private String bauthor;
 	private String bpublisher;
-	private String bavailable;
+	private int bprice;
 
-	public Books(int bid, String btitle, String bauthor, String bpublisher, String bavailable) {
+	public Books(int bid, String btitle, String bauthor, String bpublisher, int bprice) {
 		super();
 		this.bid = bid;
 		this.btitle = btitle;
 		this.bauthor = bauthor;
 		this.bpublisher = bpublisher;
-		this.bavailable = bavailable;
+		this.bprice = bprice;
 	}
 
 	public int getBid() {
@@ -49,18 +49,18 @@ public class Books {
 		this.bpublisher = bpublisher;
 	}
 
-	public String getBavailable() {
-		return bavailable;
+	public int getBprice() {
+		return bprice;
 	}
 
-	public void setBavailable(String bavailable) {
-		this.bavailable = bavailable;
+	public void setBprice(int bprice) {
+		this.bprice = bprice;
 	}
 
 	@Override
 	public String toString() {
 		return "Books [bid=" + bid + ", btitle=" + btitle + ", bauthor=" + bauthor + ", bpublisher=" + bpublisher
-				+ ", bavailable=" + bavailable + "]";
+				+ ", bprice=" + bprice + "]";
 	}
 
 }

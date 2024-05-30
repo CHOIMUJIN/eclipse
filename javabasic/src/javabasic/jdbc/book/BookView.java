@@ -11,8 +11,8 @@ public class BookView {
 			System.out.print("책 이름 : " + books.getBtitle() + "\t");
 			System.out.print("저자명 : " + books.getBauthor() + "\t");
 			System.out.print("출판사 : " + books.getBpublisher() + "\t");
-			System.out.print("가격 : " + books.getBavailable() + "\t");
-			System.out.println("--------------------------------------------------------------------------------------");
+			System.out.print("가격 : " + books.getBprice() + "\n");
+			System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------------------");
 		}
 	}
 
